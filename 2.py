@@ -5,8 +5,8 @@ class Rational:
             numerator /= biggest_dem
             denominator /= biggest_dem
 
-        self._numerator = numerator
-        self._denominator = denominator
+        self._numerator = int(numerator)
+        self._denominator = int(denominator)
 
     def __str__(self):
         return f"{self._numerator}/{self._denominator}"
